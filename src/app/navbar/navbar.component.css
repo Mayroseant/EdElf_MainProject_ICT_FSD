@@ -1,0 +1,8 @@
+nav{
+    background-color: rgb(70, 117, 119);
+    color:wheat;
+}
+.active{
+    /* color: black; */
+    font-weight: bolder;
+}

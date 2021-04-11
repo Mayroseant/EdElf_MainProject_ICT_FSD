@@ -1,0 +1,50 @@
+<h3 class="cover-heading text-center p-5">Dashboard</h3>
+<a class="btn btn-info float-sm-right m-2" routerLink="/signup" role="button">Add new Users</a>
+<a class="btn btn-info float-sm-right m-2" routerLink="/add" role="button">Add new Submission</a>
+<div class="card-body">
+    <h5 class="card-title">Users</h5>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <!-- <th></th>
+                    <th></th> -->
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.email}}</td>
+                    <!-- <td><button class="btn btn-success" (click)="readUser(user._id)">Read</button></td>
+                    <td><button class="btn btn-warning" (click)="editUser(user._id)">Edit</button></td> -->
+                    <td><button class="btn btn-danger" (click)="deleteUser(user)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card-body">
+    <h5 class="card-title">Submissions</h5>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let article of items">
+                    <td>{{article.itemTitle}}</td>
+                    <td><button class="btn btn-success" (click)="readItem(article._id)">Read</button></td>
+                    <td><button class="btn btn-warning" (click)="editItem(article)">Edit</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteItem(article)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

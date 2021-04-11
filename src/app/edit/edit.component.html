@@ -1,0 +1,43 @@
+<div class="card">
+  <form (ngSubmit)="editItem()">
+      <div class="card-header">
+          Edit the Submission
+      </div>
+      <div class="card-body">
+          <div class="table-responsive">
+              <table class="table">
+                  <tbody>
+                      <tr>
+                          <td><label>Title</label></td>
+                          <td><input type="text" name="title" [(ngModel)]="item.itemTitle"/></td>
+                      </tr>
+                      <tr>
+                          <td><label>Abstract</label></td>
+                          <td><input type="text" name="abstract" [(ngModel)]="item.itemAbstract"/></td>
+                      </tr>
+                      <tr>
+                          <td><label>Content</label></td>
+                          <td><input type="text" name="content" [(ngModel)]="item.itemContent"/></td>
+                      </tr>
+                      <tr>
+                          <td><label>Author Comments</label></td>
+                          <td><input type="text" name="comments_author" [(ngModel)]="item.comments_author"/></td>
+                      </tr>
+                      <tr>
+                        <td><label>Reviwer Comments</label></td>
+                        <td><input type="text" name="comments_author" [(ngModel)]="item.comments_reviewer"/></td>
+                      </tr>
+                      <tr>
+                        <td><label>Editor Comments</label></td>
+                        <td><input type="text" name="comments_author" [(ngModel)]="item.comments_editor"/></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td><input type="submit" value="Submit"/></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </form>
+</div>

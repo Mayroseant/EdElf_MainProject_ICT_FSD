@@ -1,0 +1,24 @@
+<h3 class="cover-heading text-center p-5">Dashboard</h3>
+<div class="card-body">
+    <h5 class="card-title">Submissions</h5>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let article of items">
+                    <td>{{article.itemTitle}}</td>
+                    <td><button class="btn btn-success" (click)="readItem(article._id)">Read</button></td>
+                    <td><button class="btn btn-warning" (click)="editItem(article._id)">Edit</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteItem(article._id)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

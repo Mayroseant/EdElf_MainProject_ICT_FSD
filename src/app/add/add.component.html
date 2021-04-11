@@ -1,0 +1,35 @@
+<div class="card">
+    <form (ngSubmit)="AddItem();">
+        <div class="card-header">
+            Add new Submission
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Title</label></td>
+                            <td><input type="text" name="title" [(ngModel)]="item.itemTitle"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Abstract</label></td>
+                            <td><input type="text" name="abstract" [(ngModel)]="item.itemAbstract"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Content</label></td>
+                            <td><input type="text" name="content" [(ngModel)]="item.itemContent"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Comments</label></td>
+                            <td><input type="text" name="comments" [(ngModel)]="item.comments_author"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Submit"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
